@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="contactstyle.css" media="screen" />
+<html> 
+<head> 
+<title> VacayMoodOn </title>
+
+<script src="rezervari.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel='shortcut icon' type='image/x-icon' href='./favicon.png' />
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<h1 class="title"> VacayMoodOn </h1>
+<p class="title"> - a trip to remember - </p>
+<div class="main">
+	<ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="vacante.html">Vacays</a></li>
+	  <li><a href="contact.html">Contact</a></li>
+	  <li><a href="about.html">About</a></li>
+	  <li><a href="rezervari.html">Rezervari</a></li>
+	</ul>
+</div>
+</head>
+<body>
+	<div class="contact-section">
+		<div class="space"> </div>
+		<h1> Book it </h1>
+		<div class="space"> </div>
+		<form class="contact-form" >
+			<input type="text" id="nume" class="contact-form-text" placeholder="Your name">
+			<input type="email" id="email" class="contact-form-text" placeholder="Your email">
+			<input type="password" id="parola" class="contact-form-text" placeholder="Your password">
+			<input type="text" id="telefon" class="contact-form-text" placeholder="Your phone">
+			<input type="text" id="destinatie" class="contact-form-text" placeholder="Destination">
+			<input type="radio" id="nou">Sunt client nou<br>
+			<input type="radio" id="vechi"> Sunt client vechi <br>
+			<button type="button" onclick="check()">Selectează nou</button>
+			<button type="button" onclick="uncheck()">Selectează vechi</button> <br>
+			<input type="checkbox" id="myCheck"  onclick="myCheckFunction()"> <br>
+			<p style="color:white"> Sunt de acord cu termenii si conditiile</p>
+			<input id="btnn" class="contact-form-btn" value="Book">
+			<button type="button" onclick="selecteaza()">Selectează parola</button> <br>
+			<button type="button" onclick="ranging()">Fă un range</button>
+		</form>
+	</div>
+</body>
